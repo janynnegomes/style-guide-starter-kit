@@ -1,0 +1,248 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+import Code from './assets/code-brackets.svg';
+import Colors from './assets/colors.svg';
+import Comments from './assets/comments.svg';
+import Direction from './assets/direction.svg';
+import Flow from './assets/flow.svg';
+import Plugin from './assets/plugin.svg';
+import Repo from './assets/repo.svg';
+import StackAlt from './assets/stackalt.svg';
+
+<Meta title="Globals/Colors" />
+
+<style>{`
+  .subheading {
+    --mediumdark: '#999999';
+    font-weight: 900;
+    font-size: 13px;
+    color: #999;
+    letter-spacing: 6px;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    margin-top: 40px;
+  }
+
+  .link-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    row-gap: 10px;
+  }
+
+  @media (min-width: 620px) {
+    .link-list {
+      row-gap: 20px;
+      column-gap: 20px;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+
+  @media all and (-ms-high-contrast:none) {
+  .link-list {
+      display: -ms-grid;
+      -ms-grid-columns: 1fr 1fr 1fr 1fr ;
+      -ms-grid-rows: 1fr;
+    }
+  }
+
+  .link-item {
+    padding: 20px 30px 20px 15px;
+    border: 1px solid #00000010;
+    border-radius: 5px;
+    transition: background 150ms ease-out, border 150ms ease-out, transform 150ms ease-out;
+    color: #333333;
+    display: flex;
+    align-items: center;
+  }
+
+  .link-item:hover {
+    border-color: #1EA7FD50;
+     box-shadow: rgba(0, 0, 0, 0.08) 0 3px 10px 0;
+  }
+
+  .link-item:active {
+    border-color: #1EA7FD;
+    transform: translate3d(0, 0, 0);
+  }
+
+  .link-item strong {
+    font-weight: 700;
+    display: block;
+    margin-bottom: 2px;
+  }
+  
+  .link-item img {
+    height: 40px;
+    width: 40px;
+    margin-right: 15px;
+    flex: none;
+  }
+
+  .link-item span {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .tip {
+    display: inline-block;
+    border-radius: 1em;
+    font-size: 11px;
+    line-height: 12px;
+    font-weight: 700;
+    background: #E7FDD8;
+    color: #66BF3C;
+    padding: 4px 12px;
+    margin-right: 10px;
+    vertical-align: top;
+  }
+
+  .tip-wrapper {
+    font-size: 13px;
+    line-height: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .tip-wrapper code {
+    font-size: 12px;
+    display: inline-block;
+  }
+
+
+  .section-colors .section-colors-item{
+    display:flex;
+    flex-direction:column;
+    font-size: 14px;
+    color: #999;
+    align-items:center;
+  }
+
+  .section-colors .section-colors-item .color-box{
+    width:120px;
+    height:80px;
+  }
+
+  
+`}</style>
+
+
+# Colors
+
+<div className="tip-wrapper">
+  <span className="tip">Reference files:</span><code>assets/_variables/colors.scss, assets/_functions/colors.scss</code>
+</div>
+
+Storybook helps you build UI components in isolation from your app's business logic, data, and context.
+That makes it easy to develop hard-to-reach states. Save these UI states as **stories** to revisit during development, testing, or QA.
+
+<div className="subheading">Colors: Brand</div>
+
+<div className="link-list section-colors">
+  <a id="brand-1" className="link-item section-colors-item"  target="_blank">
+   <label class="text-brand-1">$brand-1</label>
+   <div class="color-box bg-brand-1"></div>
+  </a>
+  <a id="brand-1-light" className="link-item section-colors-item"  target="_blank">
+   <label class="text-brand-1-light">$brand-1-light</label>
+   <div class="color-box bg-brand-1-light"></div>
+  </a>
+  <a  id="brand-1-x-light"  className="link-item section-colors-item"  target="_blank">
+   <label class="text-brand-1-x-light">$brand-1-x-light</label>
+   <div class="color-box bg-brand-1-x-light"></div>
+  </a>
+  <a className="link-item section-colors-item"  target="_blank">
+   <label class="text-brand-2">$brand-2</label>
+   <div class="color-box bg-brand-2"></div>
+  </a>
+  <a className="link-item section-colors-item"  target="_blank">
+   <label class="text-brand-2-light">$brand-2-light</label>
+   <div class="color-box bg-brand-2-light"></div>
+  </a>
+  
+</div>
+
+<div className="subheading">Colors: Warm</div>
+
+<div className="link-list section-colors">
+  <a id="red-crimson" className="link-item section-colors-item"  target="_blank">
+   <label class="text-red-crimson">$red-crimson</label>
+   <div class="color-box bg-red-crimson"></div>
+  </a>  
+  
+</div>
+
+<div className="subheading">Colors: Cool</div>
+
+<div className="link-list section-colors">
+  <a id="blue-aqua" className="link-item section-colors-item"  target="_blank">
+   <label class="text-blue-aqua">$blue-aqua</label>
+   <div class="color-box bg-blue-aqua"></div>
+  </a>  
+  
+</div>
+
+<div className="subheading">Colors: Black ,White, Gray</div>
+
+<div className="link-list section-colors">
+  <a id="black" className="link-item section-colors-item"  target="_blank">
+   <label class="text-black">$black</label>
+   <div class="color-box bg-black"></div>
+  </a> 
+   <a id="gray-coal" className="link-item section-colors-item"  target="_blank">
+   <label class="text-gray-coal">$gray-coal</label>
+   <div class="color-box bg-gray-coal"></div>
+  </a> 
+   <a id="gray-lead" className="link-item section-colors-item"  target="_blank">
+   <label class="text-gray-lead">$gray-lead</label>
+   <div class="color-box bg-gray-lead"></div>
+  </a> 
+   <a id="gray-cement" className="link-item section-colors-item"  target="_blank">
+   <label class="text-gray-cement">$gray-cement</label>
+   <div class="color-box bg-gray-cement"></div>
+  </a> 
+   <a id="black" className="link-item section-colors-item"  target="_blank">
+   <label class="text-black">$black</label>
+   <div class="color-box bg-black"></div>
+  </a> 
+   <a id="gray-titanium" className="link-item section-colors-item"  target="_blank">
+   <label class="text-gray-titanium">$gray-titanium</label>
+   <div class="color-box bg-gray-titanium"></div>
+  </a> 
+   <a id="gray-cloud" className="link-item section-colors-item"  target="_blank">
+   <label class="text-gray-cloud">$gray-cloud</label>
+   <div class="color-box bg-gray-cloud"></div>
+  </a> 
+   <a id="gray-mist" className="link-item section-colors-item"  target="_blank">
+   <label class="text-gray-mist">$gray-mist</label>
+   <div class="color-box bg-gray-mist"></div>
+  </a> 
+   <a id="white" className="link-item section-colors-item"  target="_blank">
+   <label class="text-white">$white</label>
+   <div class="color-box bg-white"></div>
+  </a>  
+  
+</div>
+
+<div className="subheading">Colors: Typography</div>
+
+<div className="link-list section-colors">
+  <a id="color-font" className="link-item section-colors-item"  target="_blank">
+   <label class="text-color-font">$color-font</label>
+   <div class="color-box bg-color-font"></div>
+  </a>
+
+  <a id="color-link" className="link-item section-colors-item"  target="_blank">
+   <label class="text-color-link">$color-link</label>
+   <div class="color-box bg-color-link"></div>
+  </a>  
+  
+</div>
+
+```
+ <label class="text-brand-2">$brand-2</label>
+ <div class="color-box bg-brand-2-light"></div>
+
+```
+
+
