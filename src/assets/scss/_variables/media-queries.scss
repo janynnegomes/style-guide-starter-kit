@@ -2,5 +2,10 @@
 
 // Media Queries: Min-width
 $media-lg: 1200px;
-$media-md:900px;
-$media-sm:600px;
+$media-md: 900px;
+$media-sm: 600px;
+
+// Media Queries: Max-width
+$media-lg-max: #{media-lg - 1};
+$media-md-max: #{media-md - 1};
+$media-sm-max: #{media-sm - 1};
