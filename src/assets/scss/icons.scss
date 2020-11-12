@@ -1,15 +1,16 @@
 // ICONS
+@import "_variables/fonts.scss";
 
 .icon {
   &.sm {
-    @include icon(1rem);
+    @include icon($icon-size-sm);
   }
   &.xs {
-    @include icon(0.8rem);
+    @include icon($icon-size-xs);
   }
 
   &.lg {
-    @include icon(1.2rem);
+    @include icon($icon-size-lg);
   }
 }
 
