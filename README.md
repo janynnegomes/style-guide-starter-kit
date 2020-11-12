@@ -2,7 +2,7 @@
 
 [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/style-guide-starter-kit)
 
-# Style Guide: Patterns
+## Style Guide: Patterns
 |Globals| HTML Elements | Components|
 |-|-|-|
 | Logos | Typography | Banners |
