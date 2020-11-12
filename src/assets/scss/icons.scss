@@ -1,0 +1,19 @@
+// ICONS
+
+.icon {
+  &.sm {
+    @include icon(1rem);
+  }
+  &.xs {
+    @include icon(0.8rem);
+  }
+
+  &.lg {
+    @include icon(1.2rem);
+  }
+}
+
+@mixin icon($size) {
+  width: $size;
+  height: $size;
+}
