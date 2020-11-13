@@ -1,0 +1,519 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+import Code from './assets/code-brackets.svg';
+import Colors from './assets/colors.svg';
+import Comments from './assets/comments.svg';
+import Direction from './assets/direction.svg';
+import Flow from './assets/flow.svg';
+import Plugin from './assets/plugin.svg';
+import Repo from './assets/repo.svg';
+import StackAlt from './assets/stackalt.svg';
+
+<Meta title="Globals/Spacing" />
+
+<style>{`
+  .subheading {
+    --mediumdark: '#999999';
+    font-weight: 900;
+    font-size: 13px;
+    color: #999;
+    letter-Padding: 2px;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    margin-top: 40px;
+  }
+
+  .link-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    row-gap: 10px;
+  }
+
+  @media (min-width: 620px) {
+    .link-list {
+      row-gap: 20px;
+      column-gap: 20px;
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media all and (-ms-high-contrast:none) {
+  .link-list {
+      display: -ms-grid;
+      -ms-grid-columns: 1fr ;
+      -ms-grid-rows: 1fr;
+    }
+  }
+
+  .link-item {
+    border: 1px solid #00000010;
+    border-radius: 5px;
+    transition: background 150ms ease-out, border 150ms ease-out, transform 150ms ease-out;
+    color: #333333;
+    display: flex;
+    align-items: center;
+  }
+
+  .link-item:hover {
+    border-color: #1EA7FD50;
+     box-shadow: rgba(0, 0, 0, 0.08) 0 3px 10px 0;
+  }
+
+  .link-item:active {
+    border-color: #1EA7FD;
+    transform: translate3d(0, 0, 0);
+  }
+
+  
+  .tip {
+    display: inline-block;
+    border-radius: 1em;
+    font-size: 11px;
+    line-height: 12px;
+    font-weight: 700;
+    background: #E7FDD8;
+    color: #66BF3C;
+    padding: 4px 12px;
+    margin-right: 10px;
+    vertical-align: top;
+  }
+
+  .tip-wrapper {
+    font-size: 13px;
+    line-height: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .tip-wrapper code {
+    font-size: 12px;
+    display: inline-block;
+  }
+
+
+  .section-spacing .section-spacing-item{
+    font-size: 14px;
+    color: #999;
+    align-items:center;
+  }
+
+  .section-spacing.section-spacing--margin .section-spacing-item .spacing-box{
+    border:dashed 1px gray;
+  }
+
+  
+`}</style>
+
+
+# Spacings
+
+<div className="tip-wrapper">
+  <span className="tip">Reference files:</span><code>assets/_variables/spacing.scss</code>
+</div>
+
+Use variables or classes for spacing.
+
+Spacing helpers can be used for padding, margins, posicioning elements and etc.
+
+The spacing variables are <code>$spacing</code>, <code>$spacing-1</code>,<code>$spacing-2</code> and <code>$spacing-half</code>.
+
+The default <code>$spacing</code> variables's value is 10 pixels.
+
+<div className="subheading">Padding: All sides</div>
+
+<div className="link-list section-spacing">
+ <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-half"  target="_blank">
+   <div class="spacing-box">
+      <label class="text-brand-1">$spacing-half : All sides</label>
+    </div>
+  </a>
+  <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing"  target="_blank">
+   <div class="spacing-box">
+      <label class="text-brand-1">$spacing : All sides</label>
+    </div>
+  </a>
+   <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-1"  target="_blank">
+   <div class="spacing-box ">
+      <label class="text-brand-1">$spacing-1 : All sides</label>
+    </div>
+  </a>
+   <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-2"  target="_blank">
+   <div class="spacing-box">
+      <label class="text-brand-1">$spacing-2 : All sides</label>
+    </div>
+  </a>
+  
+</div>
+
+
+<div className="subheading">Padding: Horizontal only</div>
+
+<div className="link-list section-spacing">
+
+  <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-half-horizontal"  target="_blank">
+   <div class="spacing-box">
+      <label class="text-brand-1">$spacing-half-horizontal : Horizontal</label>
+    </div>
+  </a>
+  <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-horizontal"  target="_blank">
+   <div class="spacing-box">
+      <label class="text-brand-1">$spacing-horizontal : Horizontal</label>
+    </div>
+  </a>
+   <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-1-horizontal"  target="_blank">
+   <div class="spacing-box ">
+      <label class="text-brand-1">$spacing-1-horizontal : Horizontal</label>
+    </div>
+  </a>
+   <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-2-horizontal"  target="_blank">
+   <div class="spacing-box">
+      <label class="text-brand-1">$spacing-2-horizontal : Horizontal</label>
+    </div>
+  </a>
+ 
+</div>
+
+
+<div className="subheading">Padding: Vertical only</div>
+
+<div className="link-list section-spacing">
+
+  <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-half-vertical"  target="_blank">
+   <div class="spacing-box">
+      <label class="text-brand-1">$spacing-half-vertical : vertical </label>
+    </div>
+  </a>
+  <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-vertical"  target="_blank">
+   <div class="spacing-box">
+      <label class="text-brand-1">$spacing-vertical : vertical </label>
+    </div>
+  </a>
+   <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-1-vertical"  target="_blank">
+   <div class="spacing-box ">
+      <label class="text-brand-1">$spacing-1-vertical : vertical </label>
+    </div>
+  </a>
+   <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-2-vertical"  target="_blank">
+   <div class="spacing-box">
+      <label class="text-brand-1">$spacing-2-vertical : vertical </label>
+    </div>
+  </a>
+ 
+</div>
+
+
+<div className="subheading">Padding: Top only</div>
+
+<div className="link-list section-spacing">
+
+  <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-half-top"  target="_blank">
+   <div class="spacing-box">
+      <label class="text-brand-1">$spacing-half-top : top </label>
+    </div>
+  </a>
+  <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-top"  target="_blank">
+   <div class="spacing-box">
+      <label class="text-brand-1">$spacing-top : top </label>
+    </div>
+  </a>
+   <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-1-top"  target="_blank">
+   <div class="spacing-box ">
+      <label class="text-brand-1">$spacing-1-top : top </label>
+    </div>
+  </a>
+   <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-2-top"  target="_blank">
+   <div class="spacing-box">
+      <label class="text-brand-1">$spacing-2-top : top </label>
+    </div>
+  </a>
+ 
+</div>
+
+
+
+<div className="subheading">Padding: bottom only</div>
+
+<div className="link-list section-spacing">
+
+  <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-half-bottom"  target="_blank">
+   <div class="spacing-box">
+      <label class="text-brand-1">$spacing-half-bottom : bottom </label>
+    </div>
+  </a>
+  <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-bottom"  target="_blank">
+   <div class="spacing-box">
+      <label class="text-brand-1">$spacing-bottom : bottom </label>
+    </div>
+  </a>
+   <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-1-bottom"  target="_blank">
+   <div class="spacing-box ">
+      <label class="text-brand-1">$spacing-1-bottom : bottom </label>
+    </div>
+  </a>
+   <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-2-bottom"  target="_blank">
+   <div class="spacing-box">
+      <label class="text-brand-1">$spacing-2-bottom : bottom </label>
+    </div>
+  </a>
+ 
+</div>
+
+
+
+<div className="subheading">Padding: left only</div>
+
+<div className="link-list section-spacing">
+
+  <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-half-left"  target="_blank">
+   <div class="spacing-box">
+      <label class="text-brand-1">$spacing-half-left : left </label>
+    </div>
+  </a>
+  <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-left"  target="_blank">
+   <div class="spacing-box">
+      <label class="text-brand-1">$spacing-left : left </label>
+    </div>
+  </a>
+   <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-1-left"  target="_blank">
+   <div class="spacing-box ">
+      <label class="text-brand-1">$spacing-1-left : left </label>
+    </div>
+  </a>
+   <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-2-left"  target="_blank">
+   <div class="spacing-box">
+      <label class="text-brand-1">$spacing-2-left : left </label>
+    </div>
+  </a>
+ 
+</div>
+
+
+<div className="subheading">Padding: right only</div>
+
+<div className="link-list section-spacing section-spacing--right">
+
+  <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-half-right"  target="_blank">
+   <div class="spacing-box">
+      <label class="text-brand-1">$spacing-half-right : right </label>
+    </div>
+  </a>
+  <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-right"  target="_blank">
+   <div class="spacing-box">
+      <label class="text-brand-1">$spacing-right : right </label>
+    </div>
+  </a>
+   <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-1-right"  target="_blank">
+   <div class="spacing-box ">
+      <label class="text-brand-1">$spacing-1-right : right </label>
+    </div>
+  </a>
+   <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-2-right"  target="_blank">
+   <div class="spacing-box">
+      <label class="text-brand-1">$spacing-2-right : right </label>
+    </div>
+  </a>
+ 
+</div>
+
+
+
+
+## margin
+
+<div className="subheading">Margin: All sides</div>
+
+<div className="link-list section-spacing  section-spacing--margin">
+ <a id="brand-1" className="link-item section-spacing-item bg-gray-mist"  target="_blank">
+   <div class="spacing-box  margin-half">
+      <label class="text-brand-1">$spacing-half : All sides. CSS class <code>margin-half</code>.</label>
+    </div>
+  </a>
+  <a id="brand-1" className="link-item section-spacing-item bg-gray-mist "  target="_blank">
+   <div class="spacing-box margin">
+      <label class="text-brand-1">$spacing : All sides. CSS class <code>margin</code>.</label>
+    </div>
+  </a>
+   <a id="brand-1" className="link-item section-spacing-item bg-gray-mist "  target="_blank">
+   <div class="spacing-box margin-1">
+      <label class="text-brand-1">$spacing-1 : All sides. CSS class <code>margin-1</code>.</label>
+    </div>
+  </a>
+   <a id="brand-1" className="link-item section-spacing-item bg-gray-mist "  target="_blank">
+   <div class="spacing-box margin-2">
+      <label class="text-brand-1">$spacing-2 : All sides. CSS class <code>margin-2</code>.</label>
+    </div>
+  </a>
+  
+</div>
+
+
+<div className="subheading">Margin: Horizontal only</div>
+
+<div className="link-list section-spacing  section-spacing--margin">
+
+  <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-half-horizontal"  target="_blank">
+   <div class="spacing-box">
+      <label class="text-brand-1">$spacing-half-horizontal : Horizontal</label>
+    </div>
+  </a>
+  <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-horizontal"  target="_blank">
+   <div class="spacing-box">
+      <label class="text-brand-1">$spacing-horizontal : Horizontal</label>
+    </div>
+  </a>
+   <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-1-horizontal"  target="_blank">
+   <div class="spacing-box ">
+      <label class="text-brand-1">$spacing-1-horizontal : Horizontal</label>
+    </div>
+  </a>
+   <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-2-horizontal"  target="_blank">
+   <div class="spacing-box">
+      <label class="text-brand-1">$spacing-2-horizontal : Horizontal</label>
+    </div>
+  </a>
+ 
+</div>
+
+
+<div className="subheading">Margin: Vertical only</div>
+
+<div className="link-list section-spacing  section-spacing--margin">
+
+  <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-half-vertical"  target="_blank">
+   <div class="spacing-box">
+      <label class="text-brand-1">$spacing-half-vertical : vertical </label>
+    </div>
+  </a>
+  <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-vertical"  target="_blank">
+   <div class="spacing-box">
+      <label class="text-brand-1">$spacing-vertical : vertical </label>
+    </div>
+  </a>
+   <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-1-vertical"  target="_blank">
+   <div class="spacing-box ">
+      <label class="text-brand-1">$spacing-1-vertical : vertical </label>
+    </div>
+  </a>
+   <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-2-vertical"  target="_blank">
+   <div class="spacing-box">
+      <label class="text-brand-1">$spacing-2-vertical : vertical </label>
+    </div>
+  </a>
+ 
+</div>
+
+
+<div className="subheading">Margin: Top only</div>
+
+<div className="link-list section-spacing  section-spacing--margin">
+
+  <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-half-top"  target="_blank">
+   <div class="spacing-box">
+      <label class="text-brand-1">$spacing-half-top : top </label>
+    </div>
+  </a>
+  <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-top"  target="_blank">
+   <div class="spacing-box">
+      <label class="text-brand-1">$spacing-top : top </label>
+    </div>
+  </a>
+   <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-1-top"  target="_blank">
+   <div class="spacing-box ">
+      <label class="text-brand-1">$spacing-1-top : top </label>
+    </div>
+  </a>
+   <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-2-top"  target="_blank">
+   <div class="spacing-box">
+      <label class="text-brand-1">$spacing-2-top : top </label>
+    </div>
+  </a>
+ 
+</div>
+
+
+
+<div className="subheading">Margin: bottom only</div>
+
+<div className="link-list section-spacing  section-spacing--margin">
+
+  <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-half-bottom"  target="_blank">
+   <div class="spacing-box">
+      <label class="text-brand-1">$spacing-half-bottom : bottom </label>
+    </div>
+  </a>
+  <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-bottom"  target="_blank">
+   <div class="spacing-box">
+      <label class="text-brand-1">$spacing-bottom : bottom </label>
+    </div>
+  </a>
+   <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-1-bottom"  target="_blank">
+   <div class="spacing-box ">
+      <label class="text-brand-1">$spacing-1-bottom : bottom </label>
+    </div>
+  </a>
+   <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-2-bottom"  target="_blank">
+   <div class="spacing-box">
+      <label class="text-brand-1">$spacing-2-bottom : bottom </label>
+    </div>
+  </a>
+ 
+</div>
+
+
+
+<div className="subheading">Margin: left only</div>
+
+<div className="link-list section-spacing section-spacing--margin">
+
+  <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-half-left"  target="_blank">
+   <div class="spacing-box">
+      <label class="text-brand-1">$spacing-half-left : left </label>
+    </div>
+  </a>
+  <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-left"  target="_blank">
+   <div class="spacing-box">
+      <label class="text-brand-1">$spacing-left : left </label>
+    </div>
+  </a>
+   <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-1-left"  target="_blank">
+   <div class="spacing-box ">
+      <label class="text-brand-1">$spacing-1-left : left </label>
+    </div>
+  </a>
+   <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-2-left"  target="_blank">
+   <div class="spacing-box">
+      <label class="text-brand-1">$spacing-2-left : left </label>
+    </div>
+  </a>
+ 
+</div>
+
+
+<div className="subheading">Margin: right only</div>
+
+<div className="link-list section-spacing  section-spacing--margin">
+
+  <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-half-right"  target="_blank">
+   <div class="spacing-box">
+      <label class="text-brand-1">$spacing-half-right : right </label>
+    </div>
+  </a>
+  <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-right"  target="_blank">
+   <div class="spacing-box">
+      <label class="text-brand-1">$spacing-right : right </label>
+    </div>
+  </a>
+   <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-1-right"  target="_blank">
+   <div class="spacing-box ">
+      <label class="text-brand-1">$spacing-1-right : right </label>
+    </div>
+  </a>
+   <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-2-right"  target="_blank">
+   <div class="spacing-box">
+      <label class="text-brand-1">$spacing-2-right : right </label>
+    </div>
+  </a>
+ 
+</div>
+

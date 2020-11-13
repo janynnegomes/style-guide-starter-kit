@@ -1,0 +1,50 @@
+// SPACING MAPS
+@import "../_variables/spacing.scss";
+
+// Generate classes for mapped spacing
+// E.g., Color classes for text like text-brand-1, text-brand-2, text-black
+// E.g., Background color classes like bg-brand-1, bg-brand-2, bg-black
+
+// Mapping spacing values
+$spacing-map:(
+"spacing":$spacing,
+"spacing-1":$spacing-1,
+"spacing-2":$spacing-2,
+"spacing-half":$spacing-half
+);
+
+// Loop the map to generate colors classes
+
+@each $name, $value in $spacing-map {
+    .#{$name}{
+        padding: $value;
+    }
+
+    .#{$name}-horizontal{
+        padding-left: $value;
+        padding-right: $value;
+    }
+
+    .#{$name}-vertical{
+        padding-top: $value;
+        padding-bottom: $value;
+    }
+
+    .#{$name}-top{
+        padding-top: $value;
+    }
+
+    .#{$name}-bottom{
+        padding-bottom: $value;
+    }
+
+    .#{$name}-left{
+        padding-left: $value;
+    }
+
+    .#{$name}-right{
+        padding-right: $value;
+    }
+    
+    
+}
