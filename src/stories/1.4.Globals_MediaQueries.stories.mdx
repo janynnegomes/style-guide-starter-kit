@@ -1,0 +1,218 @@
+import { Meta } from '@storybook/addon-docs/blocks';
+import Code from './assets/code-brackets.svg';
+import Colors from './assets/colors.svg';
+import Comments from './assets/comments.svg';
+import Direction from './assets/direction.svg';
+import Flow from './assets/flow.svg';
+import Plugin from './assets/plugin.svg';
+import Repo from './assets/repo.svg';
+import StackAlt from './assets/stackalt.svg';
+
+<Meta title="Globals/Media Queries" />
+
+<style>{`
+  .subheading {
+    --mediumdark: '#999999';
+    font-weight: 900;
+    font-size: 13px;
+    color: #999;
+    letter-Padding: 2px;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    margin-top: 40px;
+  }
+
+  .link-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    row-gap: 10px;
+  }
+
+  @media (min-width: 620px) {
+    .link-list {
+      row-gap: 20px;
+      column-gap: 20px;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media all and (-ms-high-contrast:none) {
+  .link-list {
+      display: -ms-grid;
+      -ms-grid-columns: 1fr ;
+      -ms-grid-rows: 1fr;
+    }
+  }
+
+  .link-item {
+    border: 1px solid #00000010;
+    border-radius: 5px;
+    transition: background 150ms ease-out, border 150ms ease-out, transform 150ms ease-out;
+    color: #333333;
+    display: flex;
+    align-items: center;
+  }
+
+  .link-item:hover {
+    border-color: #1EA7FD50;
+     box-shadow: rgba(0, 0, 0, 0.08) 0 3px 10px 0;
+  }
+
+  .link-item:active {
+    border-color: #1EA7FD;
+    transform: translate3d(0, 0, 0);
+  }
+
+  
+  .tip {
+    display: inline-block;
+    border-radius: 1em;
+    font-size: 11px;
+    line-height: 12px;
+    font-weight: 700;
+    background: #E7FDD8;
+    color: #66BF3C;
+    padding: 4px 12px;
+    margin-right: 10px;
+    vertical-align: top;
+  }
+
+  .tip-wrapper {
+    font-size: 13px;
+    line-height: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .tip-wrapper code {
+    font-size: 12px;
+    display: inline-block;
+  }
+
+
+  .section-spacing .section-spacing-item{
+    font-size: 14px;
+    color: #999;
+    align-items:center;
+  }
+
+  .section-spacing.section-spacing--margin .section-spacing-item .spacing-box{
+    border:dashed 1px gray;
+  }
+
+  
+`}</style>
+
+
+# Media Queries
+
+
+
+The application primarily uses min-width media query variables since the layout is mobile-first. However max-width media query variables are also available.
+
+
+## Breakpoint functions
+
+<div className="tip-wrapper">
+  <span className="tip">Reference file:</span><code>assets/functions/breakpoints.scss</code>
+</div>
+
+You can use the <code>breakpoint</code> function to provide necessary media-query range for each type of device size.
+
+The breakpoint parameters are: <code>mobile</code>,<code>tablet</code> and <code>desktop</code>
+
+```
+<style>
+.selector{
+  
+  width:100%;
+
+  @include breakpoint(mobile) {
+      
+    width:60%;
+
+  }
+
+  @include breakpoint(tablet) {
+
+    width:50%;
+
+  }
+
+  @include breakpoint(desktop) {
+      
+    width:60%;
+
+  }
+
+ 
+}
+</style>
+
+```
+
+
+## Media Queries
+
+<div className="tip-wrapper">
+  <span className="tip">Reference files:</span><code>assets/_variables/media-queries.scss</code>
+</div>
+
+Min-width media query variables are: <code>$media-sm</code>,<code>$media-md</code>,<code>$media-lg</code>
+
+Max-width media query variables are: <code>$media-sm-max</code>,<code>$media-md-max</code>,<code>$media-lg-max</code>
+
+Media queries are usually nested within the selector they are associated with.
+
+
+
+
+```
+<style>
+.selector{
+  
+  width:100%;
+
+  // Media queries: Min Width
+  @media (min-width: $media-sm) {
+      
+    width:60%;
+
+  }
+
+  @media (min-width: $media-md) {
+      
+    width:50%;
+
+  }
+
+  @media (min-width: $media-lg) {
+      
+    width:90%;
+
+  }
+
+  // Media queries: Max Width
+  @media (max-width: $media-sm-max) {
+      
+    width:60%;
+
+  }
+
+  @media (max-width: $media-md-max) {
+      
+    width:50%;
+
+  }
+
+  @media (max-width: $media-lg-max) {
+      
+    width:90%;
+
+  }
+}
+</style>
+
+```

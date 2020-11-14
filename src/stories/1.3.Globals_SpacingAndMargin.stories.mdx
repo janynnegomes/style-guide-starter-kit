@@ -25,7 +25,7 @@ import StackAlt from './assets/stackalt.svg';
 
   .link-list {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     row-gap: 10px;
   }
@@ -34,7 +34,7 @@ import StackAlt from './assets/stackalt.svg';
     .link-list {
       row-gap: 20px;
       column-gap: 20px;
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr 1fr;
     }
   }
 
@@ -109,7 +109,7 @@ import StackAlt from './assets/stackalt.svg';
 # Spacings
 
 <div className="tip-wrapper">
-  <span className="tip">Reference files:</span><code>assets/_variables/spacing.scss</code>
+  <span className="tip">Reference files:</span><code>assets/_variables/spacing.scss</code>,<code>assets/partials/spacing.scss</code>
 </div>
 
 Use variables or classes for spacing.
@@ -120,27 +120,28 @@ The spacing variables are <code>$spacing</code>, <code>$spacing-1</code>,<code>$
 
 The default <code>$spacing</code> variables's value is 10 pixels.
 
+## Padding
 <div className="subheading">Padding: All sides</div>
 
 <div className="link-list section-spacing">
  <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-half"  target="_blank">
    <div class="spacing-box">
-      <label class="text-brand-1">$spacing-half : All sides</label>
+      <label class="text-color-font">$spacing-half : All sides</label>
     </div>
   </a>
   <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing"  target="_blank">
    <div class="spacing-box">
-      <label class="text-brand-1">$spacing : All sides</label>
+      <label class="text-color-font">$spacing : All sides</label>
     </div>
   </a>
    <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-1"  target="_blank">
    <div class="spacing-box ">
-      <label class="text-brand-1">$spacing-1 : All sides</label>
+      <label class="text-color-font">$spacing-1 : All sides</label>
     </div>
   </a>
    <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-2"  target="_blank">
    <div class="spacing-box">
-      <label class="text-brand-1">$spacing-2 : All sides</label>
+      <label class="text-color-font">$spacing-2 : All sides</label>
     </div>
   </a>
   
@@ -153,22 +154,22 @@ The default <code>$spacing</code> variables's value is 10 pixels.
 
   <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-half-horizontal"  target="_blank">
    <div class="spacing-box">
-      <label class="text-brand-1">$spacing-half-horizontal : Horizontal</label>
+      <label class="text-color-font">$spacing-half-horizontal : Horizontal</label>
     </div>
   </a>
   <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-horizontal"  target="_blank">
    <div class="spacing-box">
-      <label class="text-brand-1">$spacing-horizontal : Horizontal</label>
+      <label class="text-color-font">$spacing-horizontal : Horizontal</label>
     </div>
   </a>
    <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-1-horizontal"  target="_blank">
    <div class="spacing-box ">
-      <label class="text-brand-1">$spacing-1-horizontal : Horizontal</label>
+      <label class="text-color-font">$spacing-1-horizontal : Horizontal</label>
     </div>
   </a>
    <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-2-horizontal"  target="_blank">
    <div class="spacing-box">
-      <label class="text-brand-1">$spacing-2-horizontal : Horizontal</label>
+      <label class="text-color-font">$spacing-2-horizontal : Horizontal</label>
     </div>
   </a>
  
@@ -181,22 +182,22 @@ The default <code>$spacing</code> variables's value is 10 pixels.
 
   <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-half-vertical"  target="_blank">
    <div class="spacing-box">
-      <label class="text-brand-1">$spacing-half-vertical : vertical </label>
+      <label class="text-color-font">$spacing-half-vertical : vertical </label>
     </div>
   </a>
   <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-vertical"  target="_blank">
    <div class="spacing-box">
-      <label class="text-brand-1">$spacing-vertical : vertical </label>
+      <label class="text-color-font">$spacing-vertical : vertical </label>
     </div>
   </a>
    <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-1-vertical"  target="_blank">
    <div class="spacing-box ">
-      <label class="text-brand-1">$spacing-1-vertical : vertical </label>
+      <label class="text-color-font">$spacing-1-vertical : vertical </label>
     </div>
   </a>
    <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-2-vertical"  target="_blank">
    <div class="spacing-box">
-      <label class="text-brand-1">$spacing-2-vertical : vertical </label>
+      <label class="text-color-font">$spacing-2-vertical : vertical </label>
     </div>
   </a>
  
@@ -209,22 +210,22 @@ The default <code>$spacing</code> variables's value is 10 pixels.
 
   <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-half-top"  target="_blank">
    <div class="spacing-box">
-      <label class="text-brand-1">$spacing-half-top : top </label>
+      <label class="text-color-font">$spacing-half-top : top </label>
     </div>
   </a>
   <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-top"  target="_blank">
    <div class="spacing-box">
-      <label class="text-brand-1">$spacing-top : top </label>
+      <label class="text-color-font">$spacing-top : top </label>
     </div>
   </a>
    <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-1-top"  target="_blank">
    <div class="spacing-box ">
-      <label class="text-brand-1">$spacing-1-top : top </label>
+      <label class="text-color-font">$spacing-1-top : top </label>
     </div>
   </a>
    <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-2-top"  target="_blank">
    <div class="spacing-box">
-      <label class="text-brand-1">$spacing-2-top : top </label>
+      <label class="text-color-font">$spacing-2-top : top </label>
     </div>
   </a>
  
@@ -238,22 +239,22 @@ The default <code>$spacing</code> variables's value is 10 pixels.
 
   <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-half-bottom"  target="_blank">
    <div class="spacing-box">
-      <label class="text-brand-1">$spacing-half-bottom : bottom </label>
+      <label class="text-color-font">$spacing-half-bottom : bottom </label>
     </div>
   </a>
   <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-bottom"  target="_blank">
    <div class="spacing-box">
-      <label class="text-brand-1">$spacing-bottom : bottom </label>
+      <label class="text-color-font">$spacing-bottom : bottom </label>
     </div>
   </a>
    <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-1-bottom"  target="_blank">
    <div class="spacing-box ">
-      <label class="text-brand-1">$spacing-1-bottom : bottom </label>
+      <label class="text-color-font">$spacing-1-bottom : bottom </label>
     </div>
   </a>
    <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-2-bottom"  target="_blank">
    <div class="spacing-box">
-      <label class="text-brand-1">$spacing-2-bottom : bottom </label>
+      <label class="text-color-font">$spacing-2-bottom : bottom </label>
     </div>
   </a>
  
@@ -267,22 +268,22 @@ The default <code>$spacing</code> variables's value is 10 pixels.
 
   <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-half-left"  target="_blank">
    <div class="spacing-box">
-      <label class="text-brand-1">$spacing-half-left : left </label>
+      <label class="text-color-font">$spacing-half-left : left </label>
     </div>
   </a>
   <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-left"  target="_blank">
    <div class="spacing-box">
-      <label class="text-brand-1">$spacing-left : left </label>
+      <label class="text-color-font">$spacing-left : left </label>
     </div>
   </a>
    <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-1-left"  target="_blank">
    <div class="spacing-box ">
-      <label class="text-brand-1">$spacing-1-left : left </label>
+      <label class="text-color-font">$spacing-1-left : left </label>
     </div>
   </a>
    <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-2-left"  target="_blank">
    <div class="spacing-box">
-      <label class="text-brand-1">$spacing-2-left : left </label>
+      <label class="text-color-font">$spacing-2-left : left </label>
     </div>
   </a>
  
@@ -295,22 +296,22 @@ The default <code>$spacing</code> variables's value is 10 pixels.
 
   <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-half-right"  target="_blank">
    <div class="spacing-box">
-      <label class="text-brand-1">$spacing-half-right : right </label>
+      <label class="text-color-font">$spacing-half-right : right </label>
     </div>
   </a>
   <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-right"  target="_blank">
    <div class="spacing-box">
-      <label class="text-brand-1">$spacing-right : right </label>
+      <label class="text-color-font">$spacing-right : right </label>
     </div>
   </a>
    <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-1-right"  target="_blank">
    <div class="spacing-box ">
-      <label class="text-brand-1">$spacing-1-right : right </label>
+      <label class="text-color-font">$spacing-1-right : right </label>
     </div>
   </a>
    <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-2-right"  target="_blank">
    <div class="spacing-box">
-      <label class="text-brand-1">$spacing-2-right : right </label>
+      <label class="text-color-font">$spacing-2-right : right </label>
     </div>
   </a>
  
@@ -319,29 +320,30 @@ The default <code>$spacing</code> variables's value is 10 pixels.
 
 
 
-## margin
+
+## Margin
 
 <div className="subheading">Margin: All sides</div>
 
 <div className="link-list section-spacing  section-spacing--margin">
  <a id="brand-1" className="link-item section-spacing-item bg-gray-mist"  target="_blank">
    <div class="spacing-box  margin-half">
-      <label class="text-brand-1">$spacing-half : All sides. CSS class <code>margin-half</code>.</label>
+      <label class="text-color-font">$spacing-half : All sides. CSS class <code>margin-half</code>.</label>
     </div>
   </a>
   <a id="brand-1" className="link-item section-spacing-item bg-gray-mist "  target="_blank">
    <div class="spacing-box margin">
-      <label class="text-brand-1">$spacing : All sides. CSS class <code>margin</code>.</label>
+      <label class="text-color-font">$spacing : All sides. CSS class <code>margin</code>.</label>
     </div>
   </a>
    <a id="brand-1" className="link-item section-spacing-item bg-gray-mist "  target="_blank">
    <div class="spacing-box margin-1">
-      <label class="text-brand-1">$spacing-1 : All sides. CSS class <code>margin-1</code>.</label>
+      <label class="text-color-font">$spacing-1 : All sides. CSS class <code>margin-1</code>.</label>
     </div>
   </a>
    <a id="brand-1" className="link-item section-spPpackageacing-item bg-gray-mist "  target="_blank">
    <div class="spacing-box margin-2">
-      <label class="text-brand-1">$spacing-2 : All sides. CSS class <code>margin-2</code>.</label>
+      <label class="text-color-font">$spacing-2 : All sides. CSS class <code>margin-2</code>.</label>
     </div>
   </a>
   
@@ -354,22 +356,22 @@ The default <code>$spacing</code> variables's value is 10 pixels.
 
   <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-half-horizontal"  target="_blank">
    <div class="spacing-box">
-      <label class="text-brand-1">$spacing-half-horizontal : Horizontal</label>
+      <label class="text-color-font">$spacing-half-horizontal : Horizontal</label>
     </div>
   </a>
   <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-horizontal"  target="_blank">
    <div class="spacing-box">
-      <label class="text-brand-1">$spacing-horizontal : Horizontal</label>
+      <label class="text-color-font">$spacing-horizontal : Horizontal</label>
     </div>
   </a>
    <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-1-horizontal"  target="_blank">
    <div class="spacing-box ">
-      <label class="text-brand-1">$spacing-1-horizontal : Horizontal</label>
+      <label class="text-color-font">$spacing-1-horizontal : Horizontal</label>
     </div>
   </a>
    <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-2-horizontal"  target="_blank">
    <div class="spacing-box">
-      <label class="text-brand-1">$spacing-2-horizontal : Horizontal</label>
+      <label class="text-color-font">$spacing-2-horizontal : Horizontal</label>
     </div>
   </a>
  
@@ -382,22 +384,22 @@ The default <code>$spacing</code> variables's value is 10 pixels.
 
   <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-half-vertical"  target="_blank">
    <div class="spacing-box">
-      <label class="text-brand-1">$spacing-half-vertical : vertical </label>
+      <label class="text-color-font">$spacing-half-vertical : vertical </label>
     </div>
   </a>
   <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-vertical"  target="_blank">
    <div class="spacing-box">
-      <label class="text-brand-1">$spacing-vertical : vertical </label>
+      <label class="text-color-font">$spacing-vertical : vertical </label>
     </div>
   </a>
    <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-1-vertical"  target="_blank">
    <div class="spacing-box ">
-      <label class="text-brand-1">$spacing-1-vertical : vertical </label>
+      <label class="text-color-font">$spacing-1-vertical : vertical </label>
     </div>
   </a>
    <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-2-vertical"  target="_blank">
    <div class="spacing-box">
-      <label class="text-brand-1">$spacing-2-vertical : vertical </label>
+      <label class="text-color-font">$spacing-2-vertical : vertical </label>
     </div>
   </a>
  
@@ -410,22 +412,22 @@ The default <code>$spacing</code> variables's value is 10 pixels.
 
   <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-half-top"  target="_blank">
    <div class="spacing-box">
-      <label class="text-brand-1">$spacing-half-top : top </label>
+      <label class="text-color-font">$spacing-half-top : top </label>
     </div>
   </a>
   <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-top"  target="_blank">
    <div class="spacing-box">
-      <label class="text-brand-1">$spacing-top : top </label>
+      <label class="text-color-font">$spacing-top : top </label>
     </div>
   </a>
    <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-1-top"  target="_blank">
    <div class="spacing-box ">
-      <label class="text-brand-1">$spacing-1-top : top </label>
+      <label class="text-color-font">$spacing-1-top : top </label>
     </div>
   </a>
    <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-2-top"  target="_blank">
    <div class="spacing-box">
-      <label class="text-brand-1">$spacing-2-top : top </label>
+      <label class="text-color-font">$spacing-2-top : top </label>
     </div>
   </a>
  
@@ -439,22 +441,22 @@ The default <code>$spacing</code> variables's value is 10 pixels.
 
   <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-half-bottom"  target="_blank">
    <div class="spacing-box">
-      <label class="text-brand-1">$spacing-half-bottom : bottom </label>
+      <label class="text-color-font">$spacing-half-bottom : bottom </label>
     </div>
   </a>
   <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-bottom"  target="_blank">
    <div class="spacing-box">
-      <label class="text-brand-1">$spacing-bottom : bottom </label>
+      <label class="text-color-font">$spacing-bottom : bottom </label>
     </div>
   </a>
    <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-1-bottom"  target="_blank">
    <div class="spacing-box ">
-      <label class="text-brand-1">$spacing-1-bottom : bottom </label>
+      <label class="text-color-font">$spacing-1-bottom : bottom </label>
     </div>
   </a>
    <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-2-bottom"  target="_blank">
    <div class="spacing-box">
-      <label class="text-brand-1">$spacing-2-bottom : bottom </label>
+      <label class="text-color-font">$spacing-2-bottom : bottom </label>
     </div>
   </a>
  
@@ -468,22 +470,22 @@ The default <code>$spacing</code> variables's value is 10 pixels.
 
   <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-half-left"  target="_blank">
    <div class="spacing-box">
-      <label class="text-brand-1">$spacing-half-left : left </label>
+      <label class="text-color-font">$spacing-half-left : left </label>
     </div>
   </a>
   <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-left"  target="_blank">
    <div class="spacing-box">
-      <label class="text-brand-1">$spacing-left : left </label>
+      <label class="text-color-font">$spacing-left : left </label>
     </div>
   </a>
    <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-1-left"  target="_blank">
    <div class="spacing-box ">
-      <label class="text-brand-1">$spacing-1-left : left </label>
+      <label class="text-color-font">$spacing-1-left : left </label>
     </div>
   </a>
    <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-2-left"  target="_blank">
    <div class="spacing-box">
-      <label class="text-brand-1">$spacing-2-left : left </label>
+      <label class="text-color-font">$spacing-2-left : left </label>
     </div>
   </a>
  
@@ -496,22 +498,22 @@ The default <code>$spacing</code> variables's value is 10 pixels.
 
   <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-half-right"  target="_blank">
    <div class="spacing-box">
-      <label class="text-brand-1">$spacing-half-right : right </label>
+      <label class="text-color-font">$spacing-half-right : right </label>
     </div>
   </a>
   <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-right"  target="_blank">
    <div class="spacing-box">
-      <label class="text-brand-1">$spacing-right : right </label>
+      <label class="text-color-font">$spacing-right : right </label>
     </div>
   </a>
    <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-1-right"  target="_blank">
    <div class="spacing-box ">
-      <label class="text-brand-1">$spacing-1-right : right </label>
+      <label class="text-color-font">$spacing-1-right : right </label>
     </div>
   </a>
    <a id="brand-1" className="link-item section-spacing-item bg-gray-mist spacing-2-right"  target="_blank">
    <div class="spacing-box">
-      <label class="text-brand-1">$spacing-2-right : right </label>
+      <label class="text-color-font">$spacing-2-right : right </label>
     </div>
   </a>
  
