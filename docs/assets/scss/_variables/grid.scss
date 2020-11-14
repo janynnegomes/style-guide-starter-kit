@@ -1,0 +1,9 @@
+// VARIABLES: GRID
+
+// Grid: Column Count
+$grid-column-count: 12;
+
+// Grid: Gutters
+$grid-gutter: 0.75rem;
+$grid-gutter-sm: #{$grid-gutter / 2};
+$grid-gutter-lg: #{$grid-gutter * 2};
