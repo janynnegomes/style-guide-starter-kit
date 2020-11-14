@@ -50,7 +50,7 @@
                 }
             ],
             "stylesData": "",
-            "templateData": "<hello name=\"{{ name }}\"></hello>\r\n<p class=\"text-blue-aqua\">\r\n  Start editing to see some magic happen :)\r\n</p>"
+            "templateData": "<p class=\"text-blue-aqua\">\r\n  Start editing to see some magic happen :)\r\n</p>\r\n<p>Janynne Gomes</p>"
         },
         {
             "name": "ButtonComponent",
@@ -196,43 +196,6 @@
             "stylesData": ""
         },
         {
-            "name": "HelloComponent",
-            "id": "component-HelloComponent-d96bc06054316ca858c9bcaea1f43129",
-            "file": "src/app/hello.component.ts",
-            "encapsulation": [],
-            "entryComponents": [],
-            "inputs": [],
-            "outputs": [],
-            "providers": [],
-            "selector": "hello",
-            "styleUrls": [],
-            "styles": [
-                "h1 { font-family: Lato; }"
-            ],
-            "template": "<h1>Hello {{name}}!</h1>",
-            "templateUrl": [],
-            "viewProviders": [],
-            "inputsClass": [
-                {
-                    "name": "name",
-                    "line": 9,
-                    "type": "string"
-                }
-            ],
-            "outputsClass": [],
-            "propertiesClass": [],
-            "methodsClass": [],
-            "hostBindings": [],
-            "hostListeners": [],
-            "description": "",
-            "rawdescription": "",
-            "type": "component",
-            "sourceCode": "import { Component, Input } from '@angular/core';\r\n\r\n@Component({\r\n  selector: 'hello',\r\n  template: `<h1>Hello {{name}}!</h1>`,\r\n  styles: [`h1 { font-family: Lato; }`]\r\n})\r\nexport class HelloComponent  {\r\n  @Input() name: string;\r\n}\r\n",
-            "assetsDirs": [],
-            "styleUrlsData": "",
-            "stylesData": "h1 { font-family: Lato; }\n"
-        },
-        {
             "name": "PageComponent",
             "id": "component-PageComponent-cca1a8911321fa17756ce90c90de65cc",
             "file": "src/stories/page.component.ts",
@@ -308,9 +271,6 @@
                     "elements": [
                         {
                             "name": "AppComponent"
-                        },
-                        {
-                            "name": "HelloComponent"
                         }
                     ]
                 },
@@ -541,15 +501,6 @@
                 "type": "component",
                 "linktype": "component",
                 "name": "AppComponent",
-                "coveragePercent": 0,
-                "coverageCount": "0/2",
-                "status": "low"
-            },
-            {
-                "filePath": "src/app/hello.component.ts",
-                "type": "component",
-                "linktype": "component",
-                "name": "HelloComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/2",
                 "status": "low"
