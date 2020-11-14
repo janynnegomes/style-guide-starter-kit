@@ -1,0 +1,22 @@
+@import "reset.scss";
+@import "_variables/index.scss";
+@import "_functions/index.scss";
+@import "partials/index.scss";
+
+// BOX SIZING
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+html{
+
+}
+
+body{
+    color: $color-font;
+    background-color: $gray-mist;
+    font-family: $font-family-1;
+    line-height: $line-height;
+    font-size: $font-size;
+    font-weight: $font-regular;
+}

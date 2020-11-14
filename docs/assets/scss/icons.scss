@@ -1,0 +1,20 @@
+// ICONS
+@import "_variables/fonts.scss";
+
+.icon {
+  &.sm {
+    @include icon($icon-size-sm);
+  }
+  &.xs {
+    @include icon($icon-size-xs);
+  }
+
+  &.lg {
+    @include icon($icon-size-lg);
+  }
+}
+
+@mixin icon($size) {
+  width: $size;
+  height: $size;
+}
