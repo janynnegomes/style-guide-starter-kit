@@ -50,7 +50,7 @@
                 }
             ],
             "stylesData": "",
-            "templateData": "<p class=\"text-blue-aqua\">\r\n  Start editing to see some magic happen :)\r\n</p>\r\n<p>Janynne Gomes</p>"
+            "templateData": "<p class=\"text-blue-aqua\">\r\n  Start editing to see some magic happen :)\r\n</p>\r\n<p>Janynne Gomes :) </p>"
         },
         {
             "name": "ButtonComponent",
