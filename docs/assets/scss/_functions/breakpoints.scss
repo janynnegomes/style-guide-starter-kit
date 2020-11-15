@@ -2,9 +2,9 @@
 @import "../_variables/media-queries.scss";
 
 @mixin breakpoint($point) {
-  $bp-mobile: #{"(max-width: $media-sm-max )"};
-  $bp-tablet: #{"(min-width: $media-md) and (max-width: $media-lg-max)"};
-  $bp-desktop: #{"(min-width: $media-lg)"};
+  $bp-mobile: #{"(max-width: "+$media-sm-max+" )"};
+  $bp-tablet: #{"(min-width: "+$media-sm+") and (max-width: "+$media-md+")"};
+  $bp-desktop: #{"(min-width: "+$media-md-max+")"};
 
   @if $point == mobile {
     @media #{$bp-mobile} {
