@@ -1,6 +1,7 @@
 # Angular Style Guide Starter Kit
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/style-guide-starter-kit)
+* [View Live documentation](https://janynnegomes.github.io/style-guide-starter-kit)
+
 
 ## Style Guide: Patterns
 |Globals| HTML Elements | Components|
